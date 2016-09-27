@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using StudyCaseRPl.DAL;
+using StudyCaseRPl.Models;
 namespace StudyCaseRPl.Controllers
 {
     public class CategoryController : Controller
@@ -11,10 +12,9 @@ namespace StudyCaseRPl.Controllers
         // GET: Category
         public ActionResult Index()
         {
-            ViewBag.Name = "BamBang Gento";
-            ViewBag.Alamat = "Jln. kesana kemari, yogyakarta";
-            ViewBag.phone = "083869699009";
-            return View();
+            CategoryDAL catdal = new CategoryDAL();
+            var models = catdal.GetAll();
+            return View(models);
         }
 
         // GET: Category/Details/5
