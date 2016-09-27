@@ -20,6 +20,7 @@ namespace StudyCaseRPl.Controllers
         // GET: Category/Details/5
         public ActionResult Details(int id)
         {
+            
             return View();
         }
 
