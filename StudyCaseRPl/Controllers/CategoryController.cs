@@ -27,21 +27,24 @@ namespace StudyCaseRPl.Controllers
         // GET: Category/Create
         public ActionResult Create()
         {
+
             return View();
         }
 
         // POST: Category/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Category category)
         {
             try
             {
                 // TODO: Add insert logic here
-
+                CategoryDAL catdal = new CategoryDAL();
+                catdal.Create(category);
                 return RedirectToAction("Index");
             }
-            catch
+            catch(Exception ex)
             {
+                ViewBag.Error = ex.Message;
                 return View();
             }
         }
