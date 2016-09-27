@@ -32,5 +32,17 @@ namespace StudyCaseRPl.DAL
             else
                 throw new Exception("Data dengan id" + id.ToString() + "Tidak Ditemukan");
         }
+        public void Create(Category category)
+        {
+            try
+            {
+                db.Categories.Add(category);
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception ( "Error : " + ex.Message );
+            }
+        }
     }
 }
