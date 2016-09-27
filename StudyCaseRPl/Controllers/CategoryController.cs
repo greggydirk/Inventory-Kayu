@@ -13,7 +13,7 @@ namespace StudyCaseRPl.Controllers
         {
             ViewBag.Name = "BamBang Gento";
             ViewBag.Alamat = "Jln. kesana kemari, yogyakarta";
-            ViewBag.Prodi = "Sistem Informasi";
+            
             return View();
         }
 
