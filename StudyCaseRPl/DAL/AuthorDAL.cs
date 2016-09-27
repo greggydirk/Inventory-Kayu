@@ -32,5 +32,17 @@ namespace StudyCaseRPl.DAL
             else
                 throw new Exception("Data dengan id" + id.ToString() + "TIdak  Ditemukan");
         }
+        public void Create(Author author)
+        {
+            try
+            {
+                db.Authors.Add(author);
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("error : " + ex.Message);
+            }
+        }
     }
 }

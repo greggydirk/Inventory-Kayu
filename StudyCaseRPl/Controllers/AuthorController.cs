@@ -33,16 +33,18 @@ namespace StudyCaseRPl.Controllers
 
         // POST: Author/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Author author)
         {
             try
             {
                 // TODO: Add insert logic here
-
+                AuthorDAL autdal = new AuthorDAL();
+                autdal.Create(author);
                 return RedirectToAction("Index");
             }
-            catch
+            catch(Exception ex)
             {
+                ViewBag.Error = ex.Message;
                 return View();
             }
         }
