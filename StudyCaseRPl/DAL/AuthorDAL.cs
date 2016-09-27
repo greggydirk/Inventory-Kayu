@@ -30,7 +30,7 @@ namespace StudyCaseRPl.DAL
             if (result != null)
                 return result;
             else
-                throw new Exception("Data dengan id" + id.ToString() + "TIdak Ditemukan");
+                throw new Exception("Data dengan id" + id.ToString() + "TIdak  Ditemukan");
         }
     }
 }
