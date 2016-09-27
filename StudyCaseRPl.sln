@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyCaseRPl", "StudyCaseRPl\StudyCaseRPl.csproj", "{EE78B3A9-EFA7-468E-B3AF-F2E002176F31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyCaseRPl.Tests", "StudyCaseRPl.Tests\StudyCaseRPl.Tests.csproj", "{21E0374B-78BF-4EC2-B4EC-B9E76B5772B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE78B3A9-EFA7-468E-B3AF-F2E002176F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE78B3A9-EFA7-468E-B3AF-F2E002176F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE78B3A9-EFA7-468E-B3AF-F2E002176F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE78B3A9-EFA7-468E-B3AF-F2E002176F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E0374B-78BF-4EC2-B4EC-B9E76B5772B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E0374B-78BF-4EC2-B4EC-B9E76B5772B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E0374B-78BF-4EC2-B4EC-B9E76B5772B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E0374B-78BF-4EC2-B4EC-B9E76B5772B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
